@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+    <!-- 车辆品牌 -->
+
+    <RelativeLayout
+        android:id="@+id/addcar_brand_rl"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="车辆品牌" />
+
+        <TextView
+            android:id="@+id/addcar_brand_tv"
+            style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 车型 -->
+
+    <RelativeLayout
+        android:id="@+id/addcar_model_rl"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="车型" />
+
+        <TextView
+            android:id="@+id/addcar_model_tv"
+            style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 座位数 -->
+
+    <RelativeLayout
+        android:id="@+id/addcar_seat_rl"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="座位数" />
+
+        <TextView
+            android:id="@+id/addcar_seat_tv"
+            style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 变速箱 -->
+
+    <RelativeLayout
+        android:id="@+id/addcar_gears_rl"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="变速箱" />
+
+        <TextView
+            android:id="@+id/addcar_gears_tv"
+            style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 车牌类型 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="车牌类型" />
+
+        <TextView style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 车辆照片 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="车辆照片" />
+
+        <TextView style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 租赁价格 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="租赁价格" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="number"
+            android:textColor="#3184CB"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:hint="/天"
+            android:textSize="@dimen/text_size1" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 行驶证 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="行驶证" />
+
+        <TextView style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 保险单 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="保险单" />
+
+        <TextView style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 车辆位置 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="车辆位置" />
+
+        <TextView style="@style/fastTV_style" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 联系电话 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="联系电话" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="#3184CB"
+            android:textSize="@dimen/text_size1" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/title_act_layout"/>
+    
+    
+    <RelativeLayout 
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#eeeeee"
+        >
+        <TextView 
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/yy_07"
+            android:textColor="@color/gray3"
+            android:gravity="center"
+            android:text="按住说话"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

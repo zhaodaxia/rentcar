@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <!-- 用车日期 -->
+
+    <RelativeLayout
+        android:id="@+id/usecar_data"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="用车日期" />
+
+        <TextView
+            android:id="@+id/startday_text"
+            style="@style/fastTV_style"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="170dp"
+            android:hint="起始日期"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            style="@style/fastTV_style"
+            android:layout_marginRight="125dp"
+            android:text="至"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            android:id="@+id/endday_text"
+            style="@style/fastTV_style"
+            android:hint="结束日期"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+    <!-- 目的地 -->
+
+    <RelativeLayout
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="目的地" />
+
+        <TextView
+            android:id="@+id/destination_text"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 酒店 -->
+
+    <RelativeLayout
+        android:id="@+id/wine_hotal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="酒店" />
+
+        <TextView
+            android:id="@+id/hotal_text"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 用车规格 -->
+
+    <RelativeLayout
+        android:id="@+id/usecar_standard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="用车规格" />
+
+        <TextView
+            android:text=""
+            android:id="@+id/usecar_text"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 人数 -->
+
+    <RelativeLayout
+        android:id="@+id/people_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="人数" />
+
+        <TextView
+            android:id="@+id/people_text"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 行程预算 -->
+
+    <RelativeLayout
+        android:id="@+id/route_budget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="行程预算" />
+
+        <EditText
+            android:inputType="number"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:id="@+id/route_price"
+            style="@style/fastTV_style"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textSize="@dimen/text_size1" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 联系电话 -->
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="联系电话" />
+
+        <EditText
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:id="@+id/phone_number"
+            style="@style/fastTV_style"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/text_size1" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+</LinearLayout>

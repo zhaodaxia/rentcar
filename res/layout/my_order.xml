@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout
+        android:id="@+id/travel_order"
+        style="@style/item_rl"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            style="@style/myorder_tv1"
+            android:text="旅行预约" />
+
+        <TextView
+            android:id="@+id/tv_travel"
+            style="@style/myorder_tv2"
+            android:text="共5条预约信息预约" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <RelativeLayout
+        android:id="@+id/wedding_order"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myorder_tv1"
+            android:text="婚车预约" />
+
+        <TextView
+            android:id="@+id/tv_mcar"
+            style="@style/myorder_tv2"
+            android:text="共1条预约信息预约" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <RelativeLayout
+        android:id="@+id/business_order"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myorder_tv1"
+            android:text="商务租车预约" />
+
+        <TextView
+            android:id="@+id/tv_busapp"
+            style="@style/myorder_tv2"
+            android:text="共5条预约信息预约" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <RelativeLayout
+        android:id="@+id/longterm_order"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myorder_tv1"
+            android:text="长期租车预约" />
+
+        <TextView
+            android:id="@+id/tv_long"
+            style="@style/myorder_tv2"
+            android:text="共5条预约信息预约" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+</LinearLayout>

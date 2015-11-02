@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <!-- 用车日期 -->
+
+    <RelativeLayout 
+        style="@style/item_rl"
+        android:id="@+id/longapp_usecar_data" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="用车日期" />
+
+        <TextView
+            android:id="@+id/longapp_starttime"
+            style="@style/fastTV_style"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="170dp"
+            android:hint="起始日期"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            style="@style/fastTV_style"
+            android:layout_marginRight="125dp"
+            android:text="至"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size1" />
+
+        <TextView
+            android:id="@+id/longapp_endtime"
+            style="@style/fastTV_style"
+            android:hint="结束日期"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 用车地址 -->
+
+    <RelativeLayout 
+        style="@style/item_rl" 
+        android:id="@+id/longapp_car_addr">
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="用车地址" />
+
+        <TextView
+            android:id="@+id/longapp_addr"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 用车数量 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="用车数量" />
+
+        <EditText
+            android:id="@+id/longapp_number"
+            style="@style/fastTV_style"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="number"
+            android:textSize="@dimen/text_size1" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 车身颜色 -->
+
+    <RelativeLayout 
+        android:id="@+id/longapp_car_color"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="车身颜色" />
+
+        <TextView
+            android:id="@+id/longapp_color"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 联系电话 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/myrentcar_textview"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/longapp_phone"
+            style="@style/fastTV_style"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:gravity="right"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/text_size1" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <RelativeLayout
+        android:id="@+id/carlist_atonce_order"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/xc_07" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/xl_12"
+            android:gravity="center_vertical"
+            android:text="立即预约"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注意：长期租车最低租期为30天"
+        android:textColor="@color/black" />
+
+</LinearLayout>

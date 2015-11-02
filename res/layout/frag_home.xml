@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#2384CE"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+
+        <RadioButton
+            android:id="@+id/rb_travel_car"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/zy_03"
+            android:text="@string/travel_car" />
+
+        <RadioButton
+            android:id="@+id/rb_wedding_car"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/zy_05"
+            android:text="@string/wedding_car" />
+
+        <RadioButton
+            android:id="@+id/rb_business_car"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/zy_07"
+            android:text="@string/business_car" />
+
+        <RadioButton
+            android:id="@+id/rb_long_car"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/zy_09"
+            android:text="@string/long_car" />
+    </RadioGroup>
+
+</LinearLayout>

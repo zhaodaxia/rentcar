@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/title_act_layout"/>
+    
+        <EditText
+        android:id="@+id/alter_usepassword_old"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="请输入原密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black" />
+        
+        <EditText
+        android:id="@+id/alter_usepassword_new1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="请输入新密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black" />
+        
+        <EditText
+        android:id="@+id/alter_usepassword_new2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="请再次输入新密码"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black" />
+        
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp" >
+
+        <Button
+            android:id="@+id/alter_usepassword_save_bt"
+            style="@style/item_button"
+            android:background="@drawable/button_select"
+            android:text="保存" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

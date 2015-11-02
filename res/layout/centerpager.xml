@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#D154A5" >
+
+        <ImageView
+            android:id="@+id/center_headiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/center_01" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/center_headiv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/center_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上午好！欢迎回来"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/center_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="小马哥的江湖"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/center_exit"
+            android:layout_width="64dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/zx_07"
+            android:text="退出"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <!-- 个人资料 -->
+
+        <RelativeLayout
+            android:id="@+id/personal_information_rl"
+            style="@style/item_rl"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/centerIV_style"
+                android:background="@drawable/zx_11" />
+
+            <TextView
+                style="@style/centerTV_style"
+                android:layout_toRightOf="@id/imageView1"
+                android:text="个人资料" />
+
+            <ImageView style="@style/centerIV2_style" />
+        </RelativeLayout>
+
+        <ImageView style="@style/DividerLine_style" />
+
+        <!-- 我的预约 -->
+
+        <RelativeLayout
+            android:id="@+id/my_order_rl"
+            style="@style/item_rl"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/centerIV_style"
+                android:background="@drawable/zx_14" />
+
+            <TextView
+                style="@style/centerTV_style"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="我的预约" />
+
+            <ImageView style="@style/centerIV2_style" />
+        </RelativeLayout>
+
+        <ImageView style="@style/DividerLine_style" />
+
+        <!-- 我是车主 -->
+
+        <RelativeLayout
+            android:id="@+id/owner_rl"
+            style="@style/item_rl"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/centerIV_style"
+                android:background="@drawable/zx_16" />
+
+            <TextView
+                style="@style/centerTV_style"
+                android:layout_toRightOf="@id/imageView3"
+                android:text="我是车主" />
+
+            <ImageView style="@style/centerIV2_style" />
+        </RelativeLayout>
+
+        <ImageView style="@style/DividerLine_style" />
+    </LinearLayout>
+
+</LinearLayout>

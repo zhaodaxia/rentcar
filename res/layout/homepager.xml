@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_title" />
+
+    <!--
+      <com.hanyu.car.LoopView.LoopViewPager
+        android:id="@+id/homgpager_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+         />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homgpager_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/zy_02"
+            android:cacheColorHint="@android:color/white"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.hanyu.car.ui.AnimRelativeLayout
+        android:id="@+id/homepager_iv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/zy_04" >
+    </com.hanyu.car.ui.AnimRelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.hanyu.car.ui.AnimRelativeLayout
+                android:id="@+id/travel_rentcar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:background="@drawable/zy_06" >
+            </com.hanyu.car.ui.AnimRelativeLayout>
+
+            <com.hanyu.car.ui.AnimRelativeLayout
+                android:id="@+id/business_rentcar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="4"
+                android:background="@drawable/zy_12" >
+            </com.hanyu.car.ui.AnimRelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.hanyu.car.ui.AnimRelativeLayout
+                android:id="@+id/wedding_rentcar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="4"
+                android:background="@drawable/zy_08" >
+            </com.hanyu.car.ui.AnimRelativeLayout>
+
+            <com.hanyu.car.ui.AnimRelativeLayout
+                android:id="@+id/long_rentcar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:background="@drawable/zy_10" >
+            </com.hanyu.car.ui.AnimRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

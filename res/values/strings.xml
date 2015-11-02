@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">租车</string>
+    <string name="homepage"> 租车主页</string>
+    <string name="travel_car">旅行租车</string>
+    <string name="wedding_car">婚礼租车</string>
+    <string name="business_car">商务租车</string>
+    <string name="long_car">长期租车</string>
+    <string name="center">个人中心</string>
+    <string name="fast_find_car">快速寻车</string>
+    <string name="car">劳斯莱斯幻影、劳斯莱斯银魅、阿斯顿马丁One-77、玛莎拉蒂总裁等</string>
+    <string name="car1">婚车套餐</string>
+    <string name="car2">套餐详情</string>
+    <string name="car3">套餐分为四种:</string>
+    <string name="car4">一：豪华婚车套餐、二：尊贵婚车套餐、三：高级婚车套餐、四：普通婚车套餐</string>
+    <string name="car5">豪华轿车</string>
+    <string name="car6">车型列表</string>
+    <string name="car7">车型包括:</string>
+    <string name="car8">高端轿车</string>
+    <string name="car9">凯迪拉克CTS COUPE、保时捷卡宴、凯雷德Hybrid</string>
+    <string name="car10">我要预约</string>
+    <string name="car11">在线预约</string>
+    <string name="car12">如果在上述套餐与车型列表中，还是没有您想要的车型，那么您可以在线进行预约您理想的车型，我们的工作人员会尽量帮您达成心愿</string>
+    <string name="action_settings">setting</string>
+ 
+
+</resources>

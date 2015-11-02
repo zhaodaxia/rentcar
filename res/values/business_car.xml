@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="business1">自驾租车</string>
+    <string name="business2">代驾租车</string>
+    <string name="business3">机场接送</string>
+    <string name="business4">豪车租赁</string>
+</resources>

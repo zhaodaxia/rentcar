@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+    
+    <!-- 品牌 -->
+
+    <RelativeLayout
+        android:id="@+id/searchcar_brand"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/item_textview"
+            android:text="按品牌" />
+
+        <TextView
+            android:id="@+id/bs_brand_tv"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView
+            style="@style/centerIV2_style"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+    
+    <!-- 价格 -->
+
+    <RelativeLayout
+        android:id="@+id/searchcar_price"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/item_textview"
+            android:text="按价格" />
+
+        <TextView
+            android:id="@+id/bs_price_tv"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+    
+    <!-- 车型 -->
+
+    <RelativeLayout
+        android:id="@+id/searchcar_type"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/item_textview"
+            android:text="按车型" />
+
+        <TextView
+            android:id="@+id/bs_type_tv"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 手动/自动 -->
+
+    <RelativeLayout
+        android:id="@+id/searchcar_gears"
+        style="@style/item_rl"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/bs_gears_tv"
+            style="@style/fastTV_style"
+            android:textSize="@dimen/text_size1" />
+
+        <ImageView style="@style/centerIV2_style" />
+
+        <TextView
+            style="@style/item_textview"
+            android:text="手动/自动" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <Button
+        android:id="@+id/search_car_model"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_select"
+        android:text="开始搜索"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/feedback_title"
+        layout="@layout/title_act_layout" />
+
+    <EditText
+        android:id="@+id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/feedback_title"
+        android:textAlignment="textStart"
+        android:hint="感谢您使用我们的APP，非常感谢您给我们反馈您的意见或问题！"
+        android:textColor="@color/gray"
+        android:gravity="top"
+        android:maxLength="140"
+        android:textSize="@dimen/text_size2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/feedback_et"
+        android:text="您还可以输入140个字"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/feedback_et"
+        android:layout_marginTop="36dp" >
+
+        <Button
+            android:id="@+id/feedback_coomit"
+            style="@style/item_button"
+            android:background="@drawable/button_select"
+            android:text="提交" />
+    </RelativeLayout>
+
+</RelativeLayout>

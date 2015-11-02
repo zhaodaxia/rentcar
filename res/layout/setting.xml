@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <ImageView
+        style="@style/DividerLine_style"
+        android:layout_marginTop="10dp" />
+    <!-- 意见反馈 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="意见反馈" />
+
+        <ImageView
+            style="@style/setting_imageview"
+            android:background="@drawable/xc_03" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 检查更新 -->
+
+    <RelativeLayout style="@style/item_rl" >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="检查更新" />
+
+        <ImageView
+            style="@style/setting_imageview"
+            android:background="@drawable/xc_03" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 清除缓存 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_cleancache"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="清除缓存" />
+
+        <TextView
+            android:id="@+id/setting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            style="@style/setting_imageview"
+            android:background="@drawable/xc_03" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <!-- 关于我们 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_aboutus"
+        style="@style/item_rl" >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="关于我们" />
+
+        <ImageView
+            style="@style/setting_imageview"
+            android:background="@drawable/xc_03" />
+    </RelativeLayout>
+
+    <ImageView style="@style/DividerLine_style" />
+
+</LinearLayout>

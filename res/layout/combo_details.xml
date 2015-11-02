@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:paddingBottom="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dip" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/combo_details_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/laosilaisi"
+                        android:cacheColorHint="@android:color/white"
+                        android:divider="@null"
+                        android:fadingEdge="none"
+                        android:listSelector="@android:color/transparent"
+                        android:scrollbars="none" >
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                        android:id="@+id/combo_details_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="套餐总价:"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+
+                        <TextView
+                            android:id="@+id/combo_contentInfo_mpackpage_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="¥12000"
+                            android:textColor="@color/orange"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="定金:"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+
+                        <TextView
+                            android:id="@+id/combo_contentInfo_mpackpage_deposit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="¥6000"
+                            android:textColor="@color/orange"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView style="@style/DividerLine_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="车辆包括："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size2" />
+
+                    <TextView
+                        android:id="@+id/combo_contentInfo_mpackpage_include"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="劳斯莱斯幻影*1辆+宾利欧陆飞驰*5辆（含司机）"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_size2" />
+                </LinearLayout>
+
+                <ImageView style="@style/DividerLine_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="基本公里:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size2" />
+
+                            <TextView
+                                android:id="@+id/combo_contentInfo_mpackpage_km"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="60公里"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/text_size2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="超出时间:"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/text_size2" />
+
+                            <TextView
+                                android:id="@+id/combo_contentInfo_mpackpage_ctime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="¥500/小时"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/text_size2" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="基本时间:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size2" />
+
+                            <TextView
+                                android:id="@+id/combo_contentInfo_mpackpage_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="4小时"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/text_size2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="超公里数:"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/text_size2" />
+
+                            <TextView
+                                android:id="@+id/combo_contentInfo_mpackpage_ckm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="¥50/公里"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/text_size2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView style="@style/DividerLine_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="车辆地点："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size2" />
+
+                    <TextView
+                        android:id="@+id/combo_contentInfo_mpackpage_addr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="上海青浦中国梦谷"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_size2" />
+                </LinearLayout>
+
+                <ImageView style="@style/DividerLine_style" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="车辆信息："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size2" />
+
+                <ImageView style="@style/DividerLine_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/combo_contentInfo_mpackpage_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="头车:"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+
+                        <!-- <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="劳斯莱斯幻影"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:text="副车:"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="宾利欧陆飞驰"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />-->
+                    </LinearLayout>
+
+                   <!-- <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车辆颜色:"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+
+                        <TextView
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="头车黑色/副车黑色"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/text_size2" />
+                    </LinearLayout> -->
+                </LinearLayout>
+
+                <ImageView style="@style/DividerLine_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="联系人："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size2" />
+
+                    <TextView
+                        android:id="@+id/combo_contentInfo_mpackpage_linkman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="王先生"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_size2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="预约电话："
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size2" />
+
+                    <TextView
+                        android:id="@+id/combo_contentInfo_mpackpage_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="987654321"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_size2" />
+                </LinearLayout>
+
+                <ImageView style="@style/DividerLine_style" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/combo_details_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/xc_07" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/xl_12"
+                    android:gravity="center_vertical"
+                    android:text="立即预约"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

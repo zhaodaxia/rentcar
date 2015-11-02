@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/business_title" />
+
+
+
+    <RadioGroup
+        android:id="@+id/business_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_driveself"
+            style="@style/business_tab"
+            android:background="@drawable/business_button_selector"
+            android:text="@string/business1" />
+
+        <ImageView style="@style/businessLine_style" />
+
+        <RadioButton
+            android:id="@+id/rb_driveother"
+            style="@style/business_tab"
+            android:background="@drawable/business_button_selector"
+            android:text="@string/business2" />
+
+        <ImageView style="@style/businessLine_style" />
+
+        <RadioButton
+            android:id="@+id/rb_airport"
+            style="@style/business_tab"
+            android:background="@drawable/business_button_selector"
+            android:text="@string/business3" />
+
+        <ImageView style="@style/businessLine_style" />
+
+        <RadioButton
+            android:id="@+id/rb_tuhaocar"
+            style="@style/business_tab"
+            android:background="@drawable/business_button_selector"
+            android:text="@string/business4" />
+    </RadioGroup>
+
+    <ImageView style="@style/DividerLine_style" />
+    
+    
+
+    <FrameLayout
+        android:id="@+id/business_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

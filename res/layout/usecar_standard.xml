@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<include layout="@layout/title_act_layout"/>
+    <TextView
+        android:id="@+id/standard1"
+        style="@style/travelcar_textview"
+        android:text="不限" />
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <TextView
+        android:id="@+id/standard2"
+        style="@style/travelcar_textview"
+        android:text="豪华轿车" />
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <TextView
+        android:id="@+id/standard3"
+        style="@style/travelcar_textview"
+        android:text="高端轿车" />
+
+    <ImageView style="@style/DividerLine_style" />
+
+    <TextView
+        android:id="@+id/standard4"
+        style="@style/travelcar_textview"
+        android:text="其他车型" />
+
+    <ImageView style="@style/DividerLine_style" />
+
+</LinearLayout>

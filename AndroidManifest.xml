@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hanyu.car"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.hanyu.car.global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppStartLoadTranslucent" >
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.hanyu.car.SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 闪屏页面 -->
+        <activity android:name="com.hanyu.car.activity.center.LoginActivity" ></activity>
+        <!-- 个人中心界面 -->
+        <activity android:name="com.hanyu.car.activity.home.CenterActivity" >
+        </activity>
+        <!-- 旅行租车界面 -->
+        <activity android:name="com.hanyu.car.activity.home.TravelActivity" >
+        </activity>
+        <!-- 旅行租车详情界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.TravelDetailsActivity" >
+        </activity>
+        <!-- 旅行租车立即预约界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.TravelDetailsOrderActivity" >
+        </activity>
+        <!-- 快速寻车界面 -->
+        <activity android:name="com.hanyu.car.activity.home.FindCarActivity" >
+        </activity>
+        <!-- 快速寻车用途界面 -->
+        <activity android:name="com.hanyu.car.activity.findcar.UseActivity" >
+        </activity>
+        <!-- 快速寻车品牌选择界面 -->
+        <activity android:name="com.hanyu.car.activity.findcar.SelectCarBrandActivity" >
+        </activity>
+        <!-- 快速寻车车型选择界面 -->
+        <activity android:name="com.hanyu.car.activity.findcar.SelectCarModelActivity" >
+        </activity>
+        <!-- 快速寻车搜索界面 -->
+        <activity android:name="com.hanyu.car.activity.findcar.SearchCarActivity" >
+        </activity>
+        <!-- 快速寻车语音搜索界面 -->
+        <activity android:name="com.hanyu.car.activity.findcar.VoiceSearchCarActivity" >
+        </activity>
+
+        <!-- 个人中心设置界面 -->
+        <activity android:name="com.hanyu.car.activity.center.SettingActivity" >
+        </activity>
+        <!-- 个人中心我的预约界面 -->
+        <activity android:name="com.hanyu.car.activity.center.MyOrderActivity" >
+        </activity>
+        <!-- 我的预约旅行预约界面 -->
+        <activity android:name="com.hanyu.car.activity.center.TravelOrderActivity" >
+        </activity>
+        <!-- 我的预约婚车预约界面 -->
+        <activity android:name="com.hanyu.car.activity.center.WeddingOrderActivity" >
+        </activity>
+        <!-- 我的预约商务预约界面 -->
+        <activity android:name="com.hanyu.car.activity.center.BusinessOrderActivity" >
+        </activity>
+        <!-- 我的预约长期租车预约界面 -->
+        <activity android:name="com.hanyu.car.activity.center.LongTermOrderActivity" >
+        </activity>
+        <!-- 我是车主 -->
+        <activity android:name="com.hanyu.car.activity.center.OwnerActivity" >
+        </activity>
+        <!-- 添加车辆 -->
+        <activity android:name="com.hanyu.car.activity.center.AddMyCarActivity" >
+        </activity>
+        <!-- 选择座位数 -->
+        <activity android:name="com.hanyu.car.activity.center.SelectSeatActivity" >
+        </activity>
+        
+        
+        <!-- 自定义界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.MyRentCarActivity" >
+        </activity>
+        <!-- 用车规格界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.UseCarStandardActivity" >
+        </activity>
+
+        <!-- 选择人数界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.PeopleNumberActivity" >
+        </activity>
+        <!-- 选择目的地界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.DestinationActivity" >
+        </activity>
+        <!-- 选择酒店界面 -->
+        <activity android:name="com.hanyu.car.activity.travelcar.HotalActivity" >
+        </activity>
+        <!-- 商务租车搜索界面 -->
+        <activity android:name="com.hanyu.car.activity.business.BusinessSearch" >
+        </activity>
+        <!-- 商务租车品牌选择界面 -->
+        <activity android:name="com.hanyu.car.activity.business.BrandSelectActivity" >
+        </activity>
+        <!-- 商务租车价格选择界面 -->
+        <activity android:name="com.hanyu.car.activity.business.PriceSelectActivity" >
+        </activity>
+
+        <!-- 商务租车车型选择界面 -->
+        <activity android:name="com.hanyu.car.activity.business.TypeSelectActivity" >
+        </activity>
+        <!-- 商务租车手动/自动选择界面 -->
+        <activity android:name="com.hanyu.car.activity.business.GearsSelectActivity" >
+        </activity>
+
+        <!-- 商务租车自驾租车详情界面 -->
+        <activity android:name="com.hanyu.car.activity.business.DriveSelfDetailsActivity" >
+        </activity>
+
+        <!-- 商务租车自驾租车立即预约界面 -->
+        <activity android:name="com.hanyu.car.activity.business.DriveSelfDetailsOrderActivity" >
+        </activity>
+
+        <!-- 婚礼租车在线预约界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.OrderActivity" >
+        </activity>
+        <!-- 婚礼租车婚车套餐界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.ComboActivity" >
+        </activity>
+
+        <!-- 婚礼租车豪华轿车界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.LuxuryActivity" >
+        </activity>
+        <!-- 婚礼租车高端轿车界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.PremiumActivity" >
+        </activity>
+        <!-- 婚礼租车车身颜色选择界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.SelectCarColorActivity" >
+        </activity>
+        <!-- 婚礼租车品牌选择界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.SelectBrandActivity" >
+        </activity>
+       
+        <!-- 婚礼租车跟车品牌选择界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.SelectFollowBrandActivity" >
+        </activity>
+        <!-- 婚礼租车跟车车型选择界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.SelectFollowCarModelActivity" >
+        </activity>
+        
+        <!-- 婚礼租车套餐详情界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.ComboDetailsActivity" >
+        </activity>
+        <!-- 婚礼租车套餐详情立即预约界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.ComboDetailsOrderActivity" >
+        </activity>
+        <!-- 婚礼租车豪华轿车详情界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.LuxuryDetialsActivity" >
+        </activity>
+        <!-- 婚礼租车高端轿车详情界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.PremiumDetailsActivity" >
+        </activity>
+        <!-- 婚礼租车豪华轿车立即预约界面 -->
+        <activity android:name="com.hanyu.car.activity.wedding.LuxuryDetailsOrderActivity" >
+        </activity>
+        
+        
+        <!-- 登陆界面 -->
+        <activity android:name="com.hanyu.car.MainActivity" >
+        </activity>
+        <!-- 忘记密码界面 -->
+        <activity android:name="com.hanyu.car.activity.center.LostPassWordActivity" >
+        </activity>
+        <!-- 设置新密码界面 -->
+        <activity android:name="com.hanyu.car.activity.center.LostPassWordSecondActivity" >
+        </activity>
+        <!-- 注册界面 -->
+        <activity android:name="com.hanyu.car.activity.center.RegisterActivity" >
+        </activity>
+
+        <!-- 个人资料界面 -->
+        <activity android:name="com.hanyu.car.activity.center.PersonalInformationActivity" >
+        </activity>
+        <!-- 修改用户名界面 -->
+        <activity android:name="com.hanyu.car.activity.center.UseNameActivity" >
+        </activity>
+        <!-- 修改用户联系电话界面 -->
+        <activity android:name="com.hanyu.car.activity.center.UsePhoneActivity" >
+        </activity>
+        <!-- 修改用户密码界面 -->
+        <activity android:name="com.hanyu.car.activity.center.UsePassWordActivity" >
+        </activity>
+
+        <!-- 长期租车融资方案界面 -->
+        <activity android:name="com.hanyu.car.activity.longterm.CheckPlanActivity" >
+        </activity>
+
+        <!-- 长期租车租车列表界面 -->
+        <activity android:name="com.hanyu.car.activity.longterm.CarListActivity" >
+        </activity>
+        <!-- 长期租车租车列表详情界面 -->
+        <activity android:name="com.hanyu.car.activity.longterm.CarListDetailsActivity" >
+        </activity>
+        <!-- 长期租车租车列表立即预约界面 -->
+        <activity android:name="com.hanyu.car.activity.longterm.CarListDetailsOrderActivity" >
+        </activity>
+        <!-- 长期租车预约咨询界面 -->
+        <activity android:name="com.hanyu.car.activity.longterm.ReservationActivity" >
+        </activity>
+
+        <!-- 意见反馈界面 -->
+        <activity android:name="com.hanyu.car.activity.center.FeedBackActivity" >
+        </activity>
+        <!-- 关于我们界面 -->
+        <activity android:name="com.hanyu.car.activity.center.AboutUSActivity" >
+        </activity>
+        <activity android:name="com.hanyu.car.activity.travelcar.MoreTravelActivity" >
+        </activity>
+    </application>
+
+</manifest>
